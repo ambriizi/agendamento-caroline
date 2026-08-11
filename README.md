@@ -5,7 +5,7 @@ SaaS (Software as a Service) simplificado para agendamento de horários focado e
 ## 🚀 Tecnologias
 
 *   HTML5
-*   CSS3 (Planejado)
+*   CSS3 
 *   JavaScript (Vanilla)
 
 ## 📌 Funcionalidades Atuais (MVP)
