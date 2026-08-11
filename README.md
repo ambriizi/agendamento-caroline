@@ -1,4 +1,4 @@
-# 💅 Caroline Ambrizi Nails - Sistema de Agendamento
+# 💅 Caroline Nails - Sistema de Agendamento
 
 SaaS (Software as a Service) simplificado para agendamento de horários focado em profissionais autônomas e manicures locais.
 
