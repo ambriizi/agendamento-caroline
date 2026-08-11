@@ -1,35 +1,27 @@
 function checarAgendamento() {
-    const horaFuncionamento = 18; // Horário de funcionamento do salão (18h)
+    const horaFechamento = 18; 
+    const horaAbertura = 8; // Boa prática: definir também quando abre!
     
-    let horaDesejada = document.getElementById("hora").value; // Horário desejado pela cliente
-
-
+    let nome = document.getElementById("nomeCliente").value.trim();
+    let dataHoraInput = document.getElementById("dataHoraDesejada").value;
     let textoResultado = document.getElementById("resultado");
 
-    if (horaDesejada === "" || isNaN(horaDesejada)) {
-        textoResultado.innerText = "Por favor, insira um horário válido. ⏰";
+    if (nome === "" || dataHoraInput === "") {
+        textoResultado.innerText = "Por favor, preencha seu nome e escolha uma data/horário. ⏰";
         textoResultado.style.color = "orange";
-
-    } else if (horaDesejada <= horaFuncionamento) {
-        textoResultado.innerText = "Horário disponível! 🎉";
-        textoResultado.style.color = "green";
-
-    } else {
-        textoResultado.innerText = "Desculpe, o salão já estará fechado. ❌";
-        textoResultado.style.color = "red";
+        return; // Para a execução aqui
     }
 
+    // Transforma a string do input em um objeto de Data do JavaScript
+    let dataObjeto = new Date(dataHoraInput);
+    let horaDesejada = dataObjeto.getHours();
+
+    // Nova validação inteligente
+    if (horaDesejada >= horaAbertura && horaDesejada < horaFechamento) {
+        textoResultado.innerText = `Sucesso, ${nome}! Horário disponível. 🎉`;
+        textoResultado.style.color = "green";
+    } else {
+        textoResultado.innerText = "Desculpe, o salão funciona das 08h às 18h. ❌";
+        textoResultado.style.color = "red";
+    }
 }
-
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-    
