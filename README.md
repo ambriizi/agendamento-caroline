@@ -37,3 +37,8 @@ O projeto será desenvolvido em 4 fases até se tornar um produto pronto para o 
 ### Fase 4: Recursos Avançados do SaaS
 - [ ] Integração com a API do WhatsApp para enviar confirmação automática para a cliente.
 - [ ] Sistema multi-inquilino (Multi-tenant): Permitir que outras manicures criem uma conta e usem o sistema (transformando em um SaaS real).
+
+### 📫 Vamos nos conectar?
+Se você gostou do meu perfil ou quer trocar uma ideia sobre tecnologia, fique à vontade para me mandar uma mensagem!
+- **LinkedIn:** [Carlos Ambrizi](https://www.linkedin.com/in/carlos-ambrizi-30ba13220/)
+- **E-mail:** ambrizitech@icloud.com
