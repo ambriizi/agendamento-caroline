@@ -4,7 +4,7 @@ A modern, high-performance, and conversion-oriented landing page built for an in
 
 This project follows professional web development industry standards: written in clean, production-ready code with **all internal architecture, variables, styles, and commits entirely in English**, while delivering a polished user experience tailored to local Portuguese-speaking clientele.
 
-🚀 **[Live Demo Available Here](SUA_URL_DA_VERCEL_OU_GITHUB_PAGES_AQUI)**
+🚀 **[Live Demo Available Here](https://landing-page-caroline-beryl.vercel.app/)**
 
 ---
 
@@ -39,5 +39,5 @@ This repository serves as a validated production baseline for an upcoming global
 ## 👨‍💻 Author
 
 Developed by **Carlos Ambrizi** — *Systems Analyst & Front-End Developer*
-- **LinkedIn:** [Carlos Ambrizi](https://linkedin.com)
+- **LinkedIn:** [Carlos Ambrizi](https://www.linkedin.com/in/carlos-ambrizi-30ba13220/)
 - **E-mail:** ambrizitech@icloud.com
