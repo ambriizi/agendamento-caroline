@@ -1,21 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Agendamento Manicure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agende seu horário com a melhor manicure da região. Unhas elegantes, e cuidados especiais para você.">
+    <title>Caroline Ambrizi | Unhas Perfeitas</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Agendamento da Carol</h1>
-    <p>O salão funciona até as 18h.</p>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">Caroline Ambrizi</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#reviews">Depoimentos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <input type="number" id="hora" placeholder="Digite o horário desejado">
+    <main class="main-content">
 
-    <button onclick="checarAgendamento()">Verificar Disponibilidade</button>
+        <section class="hero-section">
+            <div class="hero-container">
+                <h1>Unhas impecáveis que refletem sua personalidade</h1>
+                <p>Cuide de você com um atendimento exclusivo e materiais de alta qualidade.</p>
+                <a href="https://wa.me" target="_blank" rel="noopener" class="btn-primary">Agendar Horário</a>
+            </div>
+        </section>
 
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <h2>Sobre Mim</h2>
+                <p>Olá, me chamo Caroline Ambrizi, especialista em estética de unhas. Meu objetivo é proporcionar uma experiência de autocuidado única, unindo técnica, biossegurança e as últimas tendências do mercado para que você saia se sentindo ainda mais poderosa, e o melhor de tudo? No conforto da sua casa.</p>
+            </div>
+        </section>
 
-    <h2 id="resultado"></h2>
+        <section id="services" class="services-section">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
 
+                <div class="service-card">
+                    <h3>Manicure Tradicional</h3>
+                    <p class="service-price">R$ 35,00</p>
+                    <p>Cuticulagem detalhada, esfoliação leve e esmaltação com acabamento perfeito.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Pédicure Tradicional</h3>
+                    <p class="service-price">R$ 45,00</p>
+                    <p>Cuticulagem perfeita e esmaltação duradoura</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Pé e Mão Tradicional</h3>
+                    <p class="service-price">R$ 70,00</p>
+                    <p>O descanso que seus pés e mãos merecem</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="reviews" class="reviews-section">
+            <div class="reviews-container">
+                <h2>O que as clientes dizem</h2>
+                <p class="reviews-subtitle">A opinião de quem já experimentou e recomenda o nosso atendimento a domicílio</p>
+                
+                <div class="reviews-grid">
+                    
+                    <div class="review-card">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-text">"O atendimento da Carol é impecável! Ela vem na minha casa com tudo super esterilizado, é extremamente caprichosa e a esmaltação dura muito. Não troco por nada!"</p>
+                        <div class="client-info">
+                            <span class="client-name">Juliana Silva</span>
+                            <span class="client-location">Éden, Sorocaba</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 02 -->
+                    <div class="review-card">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-text">"Super prática a opção de atendimento em domicílio. A Carol é uma profissional incrível, pontual e muito detalhista na cuticulagem. Recomendo de olhos fechados."</p>
+                        <div class="client-info">
+                            <span class="client-name">Mariana Costa</span>
+                            <span class="client-location">Éden, Sorocaba</span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="review-card">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-text">"Amei o serviço! Fazer as unhas no conforto do meu lar economiza muito o meu tempo. O trabalho ficou lindo e o preço é super justo pela qualidade entregue."</p>
+                        <div class="client-info">
+                            <span class="client-name">Amanda Oliveira</span>
+                            <span class="client-location">Éden, Sorocaba</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Caroline Ambrizi. Todos os direitos reservados.</p>
+        <p>Built by Carlos Ambrizi — Front-End Developer</p>
+    </footer>
+
+    <a href="https://wa.me" target="_blank" rel="noopener" class="whatsapp-float" id="whatsappBtn">
+        💬 Agendar no WhatsApp
+    </a>
 
     <script src="script.js"></script>
 </body>
