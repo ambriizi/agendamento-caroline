@@ -1,27 +1,56 @@
-function checarAgendamento() {
-    const horaFechamento = 18; 
-    const horaAbertura = 8; // Boa prática: definir também quando abre!
+document.addEventListener("DOMContentLoaded", () => {
     
-    let nome = document.getElementById("nomeCliente").value.trim();
-    let dataHoraInput = document.getElementById("dataHoraDesejada").value;
-    let textoResultado = document.getElementById("resultado");
+    const navLinks = document.querySelectorAll(".nav-links a");
+    
+    navLinks.forEach(link => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const targetId = link.getAttribute("href");
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                // Desconta a altura do menu fixo para não cobrir o título da seção
+                const headerOffset = 80; 
+                const elementPosition = targetSection.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
 
-    if (nome === "" || dataHoraInput === "") {
-        textoResultado.innerText = "Por favor, preencha seu nome e escolha uma data/horário. ⏰";
-        textoResultado.style.color = "orange";
-        return; // Para a execução aqui
-    }
+    const sectionsToAnimate = document.querySelectorAll(".about-section, .services-section, .reviews-section, .service-card, .review-card");
+    
+    const animationOptions = {
+        root: null, // Usa a tela do navegador como referência
+        threshold: 0.15, // Ativa a animação quando 15% do elemento estiver visível
+        rootMargin: "0px"
+    };
 
-    // Transforma a string do input em um objeto de Data do JavaScript
-    let dataObjeto = new Date(dataHoraInput);
-    let horaDesejada = dataObjeto.getHours();
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("element-visible");
+                observer.unobserve(entry.target); // Para de observar após animar uma vez (ganho de performance)
+            }
+        });
+    }, animationOptions);
 
-    // Nova validação inteligente
-    if (horaDesejada >= horaAbertura && horaDesejada < horaFechamento) {
-        textoResultado.innerText = `Sucesso, ${nome}! Horário disponível. 🎉`;
-        textoResultado.style.color = "green";
-    } else {
-        textoResultado.innerText = "Desculpe, o salão funciona das 08h às 18h. ❌";
-        textoResultado.style.color = "red";
-    }
-}
+    sectionsToAnimate.forEach(section => {
+        // Adiciona a classe inicial de invisibilidade via JS (evita quebrar o site se o JS estiver desligado)
+        section.classList.add("element-hidden");
+        sectionObserver.observe(section);
+    });
+
+    const whatsappBtn = document.getElementById("whatsappBtn");
+
+    setInterval(() => {
+        whatsappBtn.style.transform = "scale(1.1)";
+        setTimeout(() => {
+            whatsappBtn.style.transform = "scale(1)";
+        }, 300);
+    }, 5000); // Executa a cada 5 segundos
+});
