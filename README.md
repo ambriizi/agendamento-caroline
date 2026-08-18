@@ -1,44 +1,43 @@
-# 💅 Caroline Nails - Sistema de Agendamento
+# 💅 Caroline Ambrizi | Premium Nail Salon Landing Page
 
-SaaS (Software as a Service) simplificado para agendamento de horários focado em profissionais autônomas e manicures locais.
+A modern, high-performance, and conversion-oriented landing page built for an independent nail stylist providing premium home-care services in Sorocaba, Brazil. 
 
-## 🚀 Tecnologias
+This project follows professional web development industry standards: written in clean, production-ready code with **all internal architecture, variables, styles, and commits entirely in English**, while delivering a polished user experience tailored to local Portuguese-speaking clientele.
 
-*   HTML5
-*   CSS3 
-*   JavaScript (Vanilla)
+🚀 **[Live Demo Available Here](SUA_URL_DA_VERCEL_OU_GITHUB_PAGES_AQUI)**
 
-## 📌 Funcionalidades Atuais (MVP)
+---
 
-*   [x] Entrada de horário desejado pela cliente.
-*   [x] Validação de campo vazio ou inválido.
-*   [x] Verificação automática baseada no horário de fechamento (18h).
-*   [x] Feedback visual com cores para disponibilidade.
+## 🛠️ Architecture & Tech Stack
 
-## 🗺️ Roadmap de Evolução
+This application explicitly avoids third-party library overhead or framework weight to maximize Core Web Vitals performance, SEO rankings, and instant mobile loading:
 
-O projeto será desenvolvido em 4 fases até se tornar um produto pronto para o mercado:
+- **HTML5:** Highly semantic structuring to ensure search engine crawlability (SEO) and screen reader accessibility (A11Y).
+- **CSS3:** Built using custom properties (CSS Variables) for clean design system maintenance, alongside fluid **CSS Grid** (`auto-fit`) and Flexbox layouts. Fully responsive without layout-breaking breakpoints.
+- **Vanilla JavaScript (ES6+):** Pure script manipulation handling native asynchronous behavioral triggers and user interface micro-interactions.
 
-### Fase 1: Interface e Experiência do Usuário (UI/UX)
-- [ ] Substituir o campo de número comum (`input type="number"`) por um seletor de data e hora adequado.
-- [ ] Criar um design responsivo e elegante usando CSS moderno (Flexbox/Grid).
-- [ ] Adicionar um campo para a cliente digitar o próprio nome e telefone.
+---
 
-### Fase 2: Persistência Local de Dados (Simulação de Banco)
-- [ ] Implementar `localStorage` para salvar os horários que já foram agendados.
-- [ ] Impedir que duas pessoas agendem exatamente o mesmo horário no mesmo dia.
-- [ ] Criar uma tela secreta de "Painel da Manicure" para a Carol ver a lista de agendamentos do dia.
+## 📱 Key Performance Features
 
-### Fase 3: Backend e Banco de Dados Real
-- [ ] Criar uma API (Node.js/Express ou Firebase) para gerenciar os agendamentos.
-- [ ] Salvar os dados em um banco de dados real (PostgreSQL, MongoDB ou Firestore).
-- [ ] Implementar autenticação (Login/Senha) para que apenas a Carol acesse o painel dela.
+- **Performance-First Sizing:** Image wrappers feature optimized aspect-ratio constraints (`aspect-ratio: 1/1` and `object-fit: cover`) to deliver high-quality photo grids without layout shifting (CLS).
+- **Smart Scroll Reveal:** Implements the modern native **Intersection Observer API** for scroll animations. Elements are tracked smoothly, triggering visibility transitions only when needed to prevent CPU throttling on older mobile devices.
+- **Conversion Optimization (CRO):** Sticky global header and a micro-animated sticky WhatsApp trigger button operating on automatic timed loop intervals to capture neighborhood lead generation.
+- **Persistent Accessibility:** Designed utilizing progressive enhancement concepts—ensuring all content remains perfectly legible and functional even if client browsers restrict script execution.
 
-### Fase 4: Recursos Avançados do SaaS
-- [ ] Integração com a API do WhatsApp para enviar confirmação automática para a cliente.
-- [ ] Sistema multi-inquilino (Multi-tenant): Permitir que outras manicures criem uma conta e usem o sistema (transformando em um SaaS real).
+---
 
-## 📫 Vamos nos conectar?
-Se você gostou do meu perfil ou quer trocar uma ideia sobre tecnologia, fique à vontade para me mandar uma mensagem!
-- **LinkedIn:** [Carlos Ambrizi](https://www.linkedin.com/in/carlos-ambrizi-30ba13220/)
+## 🚀 Future Technical Evolution (Roadmap)
+
+This repository serves as a validated production baseline for an upcoming global tech-stack conversion pipeline:
+- [ ] Migrate component architecture into a strict **React + TypeScript** implementation.
+- [ ] Refactor styles using **Tailwind CSS** utility classes.
+- [ ] Incorporate internationalization (i18n) modules to test automated multi-language toggles.
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Carlos Ambrizi** — *Systems Analyst & Front-End Developer*
+- **LinkedIn:** [Carlos Ambrizi](https://linkedin.com)
 - **E-mail:** ambrizitech@icloud.com
