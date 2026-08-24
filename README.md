@@ -39,5 +39,5 @@ This repository serves as a validated production baseline for an upcoming global
 ## 👨‍💻 Author
 
 Developed by **Carlos Ambrizi** — *Systems Analyst & Front-End Developer*
-- **LinkedIn:** [Carlos Ambrizi](https://www.linkedin.com/in/carlos-ambrizi-30ba13220/)
+- **LinkedIn:** [Carlos Ambrizi](https://www.linkedin.com/in/ambriizi)
 - **E-mail:** ambrizitech@icloud.com
